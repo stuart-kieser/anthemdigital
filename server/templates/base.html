@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthem Digital Agency
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css' ) }}">
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/multi-swap.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            // Get the target section element using the provided id
+            var targetSection = document.getElementById(sectionId);
+
+            // Use the scrollIntoView method to scroll to the section
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        function displayMessage() {
+            alert("Are you sure you'd like to submit?")
+        }
+    </script>
+</head>
+
+<header>
+    <div class="header-content" id="header-content">
+        <nav class="nav-container">
+            <div class="nav-heading">
+                <h1>Anthem Digital Agency</h1>
+            </div>
+            <div class="nav-buttons">
+                <a href="/">Home</a>
+                <a onclick="scrollToSection('services')">Services</a>
+                <a onclick="scrollToSection('testimonials')">Testimonials</a>
+                <a onclick="scrollToSection('contact')">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+{% block content %}
+{% endblock %}

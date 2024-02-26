@@ -1,0 +1,362 @@
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 36px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-heading {
+    margin-left: 95;
+}
+
+.nav-buttons {
+    margin-right: 5;
+    /* Adjust the gap between buttons as needed */
+}
+
+.nav-buttons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #c8c8c8;
+    font-size: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+section.hero {
+    text-align: center;
+    padding: 100px 20px;
+    height: 400px;
+    /* Set the background image */
+    background-image: url('../images/hero-card-bg.jpg');
+
+    /* Set background size to cover the entire card */
+    background-size: cover;
+}
+
+.hero-card {
+    width: 40%;
+    margin-left: auto;
+    color: #000000;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p.hero-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section.features {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* styles.css */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    /* Adjust the gap as needed */
+}
+
+.feature {
+    border: 1px solid #c2c2c2;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
+    /* Center the child horizontally */
+    align-items: center;
+    /* Center the child vertically */
+}
+
+.feature h3 {
+    color: #14171a;
+    font-size: 20px;
+}
+
+.feature img {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.feature p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.feature-label {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.feature-label img {
+    width: 40px;
+    /* Adjust the width as needed */
+    height: 40px;
+    /* Adjust the height as needed */
+    margin-right: 10px;
+    /* Add some spacing between the image and text */
+}
+
+
+section.testimonials {
+    background-color: #2d2e46;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+section.testimonials h2 {
+    color: #c0c0c0;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+section.contact {
+    text-align: center;
+    padding: 100px 20px;
+    height: 400px;
+    /* Set the background image */
+    background-image: url('../images/background.jpg');
+    /* Set background size to cover the entire card */
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fff;
+    color: #007BFF;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #555;
+}
+
+.contact-card h2 {
+    text-align: center;
+    color: #c0c0c0;
+}
+
+.contact-card form {
+    margin-top: 20px;
+}
+
+.contact-card label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c0c0c0;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-card button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-card button:hover {
+    background-color: #45a049;
+}
+
+.company-logo {
+    width: 400px;
+    height: 400px;
+}
+
+/* Company details section */
+/* Apply styles to the entire section */
+/* Add this to your existing CSS */
+
+.company-details-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+    width: 300px;
+    height: 300px;
+}
+
+.company-logo img {
+    width: 300px;
+    height: 300px
+        /* Adjust the size as needed */
+}
+
+.nav-buttons-bottom {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+.nav-socials-bottom {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.nav-container-bottom {
+    display: flex;
+    flex-direction: column;
+    /* Set the direction to column */
+    align-items: center;
+    /* Align items in the center horizontally */
+}
+
+.nav-container-bottom a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    /* Set the direction to column */
+    align-items: center;
+    /* Align items in the center horizontally */
+}
+
+.socials h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.socials a {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.socials img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
