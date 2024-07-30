@@ -19,7 +19,7 @@ header {
     padding: 10px 0;
     position: sticky;
     top: 0;
-    height: 70px;
+    height: 80px;
 }
 
 
@@ -34,6 +34,14 @@ a {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+    position: absolute;
+    top: 0;
 }
 
 ul {
@@ -91,6 +99,23 @@ li {
     background-color: #e66058;
 }
 
+#products {
+    background-color: #2A3D45;
+    padding: 60px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#products li {
+    list-style: none;
+    font-size: 20px;
+}
+
 #about {
     background-color: #FFFFFF;
     padding: 60px 20px;
@@ -128,6 +153,10 @@ li {
     display: inline-block;
     width: calc(33.333% - 40px);
     box-sizing: border-box;
+}
+
+.service:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 .service h3 {
