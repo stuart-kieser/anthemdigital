@@ -265,3 +265,47 @@ footer {
     width: 20px;
     height: 20px;
 }
+
+
+/* POP UP */
+/* Styles for the success popup */
+.success-popup {
+    position: fixed;
+    /* Fixed position for staying on screen */
+    top: 20px;
+    /* Position from the top */
+    right: 20px;
+    /* Position from the right */
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 15px;
+    /* Padding for some space inside */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    z-index: 1000;
+    /* Stay on top of other elements */
+    font-family: Arial, sans-serif;
+    /* Font style */
+    font-size: 16px;
+    /* Font size */
+    opacity: 0;
+    /* Initially invisible */
+    transform: translateY(-20px);
+    /* Initial transform for animation */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    /* Smooth transition */
+}
+
+/* Show class for animating popup */
+.show {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move into place */
+}
+
+/* POP UP */

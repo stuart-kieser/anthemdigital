@@ -2,7 +2,4 @@
 *.roadmap
 *.pdf
 *venv/
-*FILE_STORAGE/
-*CALC/
-*BUILDING_PLANS_01/
 *__pycache__

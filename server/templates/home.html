@@ -18,7 +18,7 @@
         </div>
     </section>
 
-    <section id="products">
+    <!-- <section id="products">
         <div class="container">
             <h2>Products</h2>
             <p>
@@ -27,7 +27,7 @@
                 </lu>
             </p>
         </div>
-    </section>
+    </section> -->
 
     <section id="services">
         <div class="container">
@@ -59,7 +59,7 @@
         <div class="container">
             <h2>What Our Clients Say</h2>
             <div class="testimonial">
-                <p>"ANthem transformed our business processes with their custom software. Highly recommend!"</p>
+                <p>"Anthem transformed our business processes with their custom software. Highly recommend!"</p>
                 <span>- John Doe, CEO of LogistInc</span>
             </div>
             <div class="testimonial">
@@ -72,16 +72,16 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form action="#">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form hx-post="/contact-form" hx-target="body">
+                <input type="text" placeholder="Your Name" name='name' required>
+                <input type="email" placeholder="Your Email" name='email' required>
+                <textarea placeholder="Your Message" name='message' required></textarea>
                 <button type="submit">Send Message</button>
             </form>
-            <div class="contact-info">
+            <!-- <div class="contact-info">
                 <p>Email: enquires@anthem.com</p>
                 <p>Phone: +27 83 456 7890</p>
-            </div>
+            </div> -->
         </div>
     </section>
 </body>
