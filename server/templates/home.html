@@ -1,143 +1,73 @@
-{% extends 'base.html' %}
+{% extends 'base.html'%}
 {% block content %}
 
-<body id="home">
-    <section class="hero">
-        <div class="hero-card">
-            <h1>Welcome to Anthem</h1>
-            <p class="hero-description">Anthem is a digital agency that focuses on simple delivery and high
-                project quality. With Anthem on your side, you can trust that the digital face of your business
-                is in good hands, letting you focus on what you want.</p>
-            <button href="/" onclick="scrollToSection('contact')">Get
-                A Quote</button>
+<body>
+    <section id="hero">
+        <div class="container">
+            <h1>Innovative Software Solutions</h1>
+            <p>Creating custom software to enhance your business capabilities.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </section>
 
-    <section class="features" id="services">
-        <h2>Our services</h2>
-        <div class="feature-grid">
-            <div class="feature">
-                <h3><img src="{{url_for('static', filename='icons/web-coding.png')}}" alt="Web design icon">Web
-                    Design
-                </h3>
-                <p>Crafting Digital Experiences
-                    Designing visually appealing and user-friendly websites tailored to your brand. Our web design
-                    services
-                    combine creativity with functionality to deliver a seamless and engaging online experience.</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Anthem, we specialize in crafting bespoke software that empowers businesses to reach their full
+                potential. With a team of experienced developers, we bring innovative ideas to life.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Custom Software Development</h3>
+                <p>Tailored software solutions to fit your unique business needs.</p>
             </div>
-            <div class="feature">
-                <h3><img src="{{url_for('static', filename='icons/logo-design.png')}}" alt="Logo design icon">Logo
-                    Design</h3>
-                <p>Distinctive Brand Identity
-                    Create a lasting first impression with a unique and memorable logo. Our logo design services
-                    focus
-                    on
-                    capturing the essence of your brand, ensuring that your visual identity stands out in a crowded
-                    market.</p>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Modern, responsive websites that drive engagement and growth.</p>
             </div>
-            <!-- <div class="feature">
-                <h3><img src="{{url_for('static', filename='icons/cloud-hosting-icon.png')}}" alt="Web hosting icon">Web
-                    hosting</h3>
-                <p>Reliable Hosting Solutions
-                    Trust your website with our secure and high-performance web hosting services. We provide
-                    reliable
-                    hosting solutions, ensuring your website is always accessible, fast, and backed by robust
-                    security
-                    measures.</p>
-                <button>Read More</button>
-            </div> -->
-            <div class="feature">
-                <h3><img src="{{url_for('static', filename='icons/bullhorn.png')}}" alt="Web marketing icon">Digital
-                    Marketing</h3>
-                <p>Boost Your Online Presence
-                    Elevate your brand's visibility with our digital marketing services. From social media
-                    strategies to
-                    targeted campaigns, we help you connect with your audience, drive engagement, and achieve your
-                    business
-                    goals in the digital landscape.</p>
+            <div class="service">
+                <h3>Mobile App Development</h3>
+                <p>Innovative mobile applications for iOS and Android platforms.</p>
             </div>
-            <div class="feature">
-                <h3><img src="{{url_for('static', filename='icons/soft-dev.png')}}" alt="Web hosting icon">Software
-                    Design</h3>
-                <p>Innovative Software Solutions
-                    Transform your ideas into powerful software solutions. Our software design services cover the
-                    entire
-                    development lifecycle, creating scalable and intuitive applications tailored to meet your
-                    specific
-                    needs.</p>
-            </div>
-            <div class="feature">
-                <h3><img src="{{url_for('static', filename='icons/seo.png')}}" alt="SEO icon">Search Engine
-                    Optimization</h3>
-                <p>Optimize for Online Success
-                    Improve your website's visibility on search engines with our SEO services. We employ strategic
-                    optimization techniques to enhance your online presence, drive organic traffic, and ensure that
-                    your
-                    business ranks high in search engine results.</p>
+            <div class="service">
+                <h3>Data science</h3>
+                <p>Powerful data analysis and data cleaing, giving your business the best insight</p>
             </div>
         </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
-        <h2>Be a voice in our testomonials.</h2>
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"ANthem transformed our business processes with their custom software. Highly recommend!"</p>
+                <span>- John Doe, CEO of LogistInc</span>
+            </div>
+            <div class="testimonial">
+                <p>"Their web development team delivered a stunning website that exceeded our expectations."</p>
+                <span>- Jane Smith, Marketing Director at CreativeAgency</span>
+            </div>
+        </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="contact-card">
+    <section id="contact">
+        <div class="container">
             <h2>Contact Us</h2>
-            <form hx-post="{{url_for('views.contact')}}" hx-target="#home">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="1" required></textarea>
-
-                <button type="submit" onclick="displayMessage()">Send Message</button>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
+            <div class="contact-info">
+                <p>Email: enquires@anthem.com</p>
+                <p>Phone: +27 83 456 7890</p>
+            </div>
         </div>
     </section>
-
-    <section class="company-details" id="company-details">
-        <div class="company-details-card">
-
-            <div class="company-logo">
-                <img src="{{url_for('static', filename='images/company-logo.png')}}" alt="Anthem logo"
-                    class="company-logo">
-            </div>
-
-            <div class="nav-buttons-bottom">
-                <nav class="nav-container-bottom">
-                    <h2>Navigation</h2>
-                    <a onclick="scrollToSection('home')">Home</a>
-                    <a onclick="scrollToSection('services')">Services</a>
-                    <a onclick="scrollToSection('testimonials')">Testimonials</a>
-                    <a onclick="scrollToSection('contact')">Contact</a>
-                </nav>
-            </div>
-
-            <div class="nav-socials-bottom">
-                <div class="socials">
-                    <h2>Follow us</h2>
-                    <a><img src="{{url_for('static', filename='icons/instagram.png')}}" alt="IG-Logo">Instagram</a>
-                    <a><img src="{{url_for('static', filename='icons/linkedin.png')}}" alt="LI-Logo">LinkedIn</a>
-                    <a><img src="{{url_for('static', filename='icons/facebook.png')}}" alt="FB-Logo">Facebook</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <!-- &copy; Copyright 2024 Anthem Digital Agency -->
-        <p>Anthem Digital Agency</p>
-
-    </footer>
 </body>
-
 {% endblock %}
