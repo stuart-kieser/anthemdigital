@@ -80,6 +80,10 @@ li {
     margin-right: 18px;
 }
 
+.more-btn {
+    color: #444444;
+}
+
 #hero {
     background-color: #2A3D45;
     color: #FFFFFF;
