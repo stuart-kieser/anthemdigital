@@ -32,3 +32,23 @@ def tos():
 @views.route("/privacy-policy")
 def pp():
     return render_template("privacy-policy.html")
+
+
+@views.route("/about")
+def about():
+    return render_template("about.html")
+
+
+@views.route("/contact-us")
+def contact():
+    return render_template("contact.html")
+
+
+@views.route("/services")
+def services():
+    return render_template("services.html")
+
+
+@views.route("/testimonials")
+def testomonials():
+    return render_template("testomonials.html")
