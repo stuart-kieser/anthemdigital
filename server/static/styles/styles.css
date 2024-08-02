@@ -18,11 +18,13 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .container h2 {
-    padding-bottom: 30px;
+    padding: 30px;
+    font-size: 28px;
+
 }
 
 header {
@@ -31,6 +33,7 @@ header {
     position: sticky;
     top: 0;
     height: 80px;
+    z-index: 999
 }
 
 
@@ -175,6 +178,20 @@ li {
     justify-content: center;
 }
 
+.services-list li {
+    padding: 10px;
+}
+
+.services-list li:hover {
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.services-list li:active {
+    border-radius: 5px;
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.3);
+}
+
 .service {
     background-color: #FFFFFF;
     padding: 20px;
@@ -284,6 +301,15 @@ footer {
     align-items: center;
 }
 
+.footer-notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #2B7A78;
+    border-radius: 10px;
+}
+
 .footer-links a,
 .social-media a {
     color: #FFFFFF;
@@ -297,46 +323,60 @@ footer {
     height: 20px;
 }
 
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
 
-/* POP UP */
-/* Styles for the success popup */
-.success-popup {
-    position: fixed;
-    /* Fixed position for staying on screen */
-    top: 20px;
-    /* Position from the top */
-    right: 20px;
-    /* Position from the right */
-    background-color: #4CAF50;
-    /* Green background */
-    color: white;
-    /* White text */
-    padding: 15px;
-    /* Padding for some space inside */
-    border-radius: 5px;
-    /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
-    z-index: 1000;
-    /* Stay on top of other elements */
-    font-family: Arial, sans-serif;
-    /* Font style */
-    font-size: 16px;
-    /* Font size */
-    opacity: 0;
-    /* Initially invisible */
-    transform: translateY(-20px);
-    /* Initial transform for animation */
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    /* Smooth transition */
+    .container h2 {
+        font-size: 2em;
+    }
+
+    .feature h3 {
+        font-size: 1.5em;
+    }
+
+    .feature p {
+        font-size: 1em;
+    }
 }
 
-/* Show class for animating popup */
-.show {
-    opacity: 1;
-    /* Fully visible */
-    transform: translateY(0);
-    /* Move into place */
+.feature-controls {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-content: space-between;
+    background-color: #2B7A78;
+    margin-bottom: 55px;
 }
 
-/* POP UP */
+.feature {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Feature heading styling */
+.feature h3 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+    color: #b9bada;
+    /* Accent color */
+}
+
+/* Feature paragraph styling */
+.feature p {
+    font-size: 1.1em;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Hover effect for feature boxes */
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+}

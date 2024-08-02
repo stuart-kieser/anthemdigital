@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<body>
+    <div>
+        <div>
+            <title>Tenant management CRM</title>
+        </div>
+
+        <section
+            style="display: flex; flex-direction: column; background-color: #2B7A78; justify-content: center; align-items: center; text-align: center; padding: 200px 50px 100px 50px;">
+            <h1 style="font-size: 66px; margin-bottom: 20px; color: aliceblue;">Tenant management CRM</h1>
+            <div class="section-details" style="margin-bottom: 20px;color: aliceblue;">
+                Manage your Tenants with the push of a button.
+            </div>
+        </section>
+        <section id="features" name='sec5' style="background-color: #205a58;;">
+            <div class="container">
+                <h2 style="color: aliceblue;">Room Management Features</h2>
+
+                <div class="feature">
+                    <h3>Room List</h3>
+                    <p>This feature provides a detailed
+                        overview, allowing you to manage and organize rooms efficiently.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Room Table</h3>
+                    <p>View a detailed table of rooms filtered by building. This feature ensures
+                        that you can quickly check room statuses, including vacancy and pricing, for efficient
+                        management.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Add Room Form</h3>
+                    <p>Add new rooms to the building with ease. This feature provides a form to input necessary details
+                        such as room number, area, rate, and occupants, tailored to different building types.</p>
+                </div>
+                <div class="feature">
+                    <h3>Room Card</h3>
+                    <p>View detailed information about a specific room. This feature provides a comprehensive card
+                        layout showing all the key details of a room, making it easy to review room-specific
+                        information.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Change Payment Status</h3>
+                    <p>Update the payment status of tenants. This feature allows you to mark payments as paid and record
+                        the payment date, ensuring accurate tracking of tenant payments.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Room Options</h3>
+                    <p>Fetch and display options for rooms within a specific building. This feature provides a list of
+                        rooms filtered by building, making it easy to manage room-specific tasks and assignments.</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="features" name='sec6' style="background-color: #17252A;">
+            <div class="container">
+                <h2 style="color: aliceblue">Tenant Management Features</h2>
+
+                <div class="feature">
+                    <h3>Tenant View</h3>
+                    <p>Access a general overview of tenant management. This feature provides a user-specific view,
+                        displaying essential information and quick access to tenant-related functionalities.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Tenant List</h3>
+                    <p>View a list of all tenants. This feature helps in managing and organizing tenant information
+                        effectively, ensuring easy access to tenant details.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Tenant Table</h3>
+                    <p>Display a detailed table of tenants. This feature includes information about tenant rooms and
+                        their respective prices, providing a comprehensive view for efficient management.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Specific Tenant Table</h3>
+                    <p>View tenants of a specific building. This feature filters tenants by building, allowing for a
+                        focused view of tenants in a particular building.</p>
+                </div>
+                <div class="feature">
+                    <h3>Tenant Card</h3>
+                    <p>View detailed information about a specific tenant. This feature provides a card layout displaying
+                        all key details of a tenant, making it easy to review tenant-specific information.</p>
+                </div>
+                <div class="feature">
+                    <h3>Tenant Dashboard</h3>
+                    <p>Access a dashboard with tenant-related statistics. This feature provides insights into the number
+                        of leases, unpaid tenants, average rent, total revenue, and unpaid revenue, helping in effective
+                        management.</p>
+                </div>
+                <div class="feature">
+                    <h3>Search Tenants</h3>
+                    <p>Search for tenants based on various criteria. This feature allows you to quickly find tenants
+                        using keywords related to their name, ID, room number, or payment status.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Payment History</h3>
+                    <p>View the payment history of a specific tenant. This feature provides a detailed record of all
+                        payments made by the tenant, ensuring transparent and accurate tracking.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>View Payment</h3>
+                    <p>Display details of a specific payment. This feature shows the payment amount, date, and status,
+                        helping in reviewing individual payments.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+{% endblock %}
